@@ -1,13 +1,11 @@
-@import '/assets/fonts/fonts.css';
-
 .button {
     display: inline-block;
     width: 189px;
     height: 48px;
     flex-shrink: 0;
     margin: 5px;
-    background-color: #FFFFFF;
-    color: #495057;
+    background-color: var(--white);
+    color: var(--grey-4);
     text-align: center;
     font-family: Roboto;
     font-size: 16px;
@@ -20,29 +18,32 @@
     }
   
   .button_primary {
-    background: #4263EB;
-    color: #FFF;
+    background: var(--blue-2);
+    color: var(--white);
+    transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
   }
   
   .button_primary:hover {
-    background: #2342C0;
+    background: var(--blue-3);
   }
   
   .button_secondary {
-    background: #7048E8;
-    color: #FFF;
+    background: var(--secondary);
+    color: var(--white);
+    transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
   }
   
   .button_secondary:hover {
-    background: #5028C6;
+    background: var(--purple-2);
   }
   
   .button_alternate {
-    border: 1px solid #ACB5BD;
+    border: 1px solid var(--grey-6);
+    transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
   }
   
   .button_alternate:hover {
-    border: 1px solid #212429;
+    border: 1px solid var(--grey-7);
   }
   
   .button_disabled {
