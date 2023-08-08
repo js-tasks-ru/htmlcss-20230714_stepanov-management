@@ -1,1 +1,84 @@
-/* Стилизация аккордеона */
+.accordion__item {
+    margin-bottom: 8px;
+}
+
+.accordion__item:last-child {
+    margin-bottom: 0;
+}
+
+.accordion__details {
+    display: inline-block;
+    margin-bottom: 8px;
+    width: 730px;
+    height: 144px;
+    flex-shrink: 0;
+    fill: #FFF;
+    stroke-width: 1px;
+    box-sizing: border-box;
+    border: 1px solid #ACB5BD;
+    overflow: hidden;
+    stroke: var(--gray-3, #ACB5BD);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='730' height='144' viewBox='0 0 730 144'%3E%3Cpath d='M0.5 8C0.5 3.85787 3.85787 0.5 8 0.5H722C726.142 0.5 729.5 3.85787 729.5 8V136C729.5 140.142 726.142 143.5 722 143.5H8C3.85787 143.5 0.5 140.142 0.5 136V8Z' fill='none' stroke='%23ACB5BD'/%3E%3C/svg%3E");
+     border: 5px solid transparent; /* Установка прозрачной границы */
+          border-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='730' height='144' viewBox='0 0 730 144'%3E%3Cpath d='M0.5 8C0.5 3.85787 3.85787 0.5 8 0.5H722C726.142 0.5 729.5 3.85787 729.5 8V136C729.5 140.142 726.142 143.5 722 143.5H8C3.85787 143.5 0.5 140.142 0.5 136V8Z' fill='none' stroke='%23ACB5BD'/%3E%3C/svg%3E") 15% round; /* Задание SVG-контура для границы с округлением углов */
+  background-repeat: no-repeat;
+}
+
+.accordion__details:not([open]) > *:not(.accordion__summary) {
+    display: none;
+}
+
+.accordion__summary {
+    display: inline-block;
+    width: 158.86px;
+    margin-top: 24px;
+    margin-left: 32px;
+    color: var(--black, #212429);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    cursor: pointer;
+    outline: none;
+    user-select: none;    
+}
+
+.accordion__summary::-webkit-details-marker {
+    display: none;
+}
+  
+.accordion__description {
+  width: 649.309px;
+  color: var(--gray-4, #495057);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  margin-top: 16px;
+  margin-left: 32px;
+  margin-right: 48.69px;
+  margin-bottom: 32px;
+ }
+
+.accordion__details:not(:target) {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='730' height='144' viewBox='0 0 730 144'%3E%3Cpath d='M0.5 8C0.5 3.85787 3.85787 0.5 8 0.5H722C726.142 0.5 729.5 3.85787 729.5 8V136C729.5 140.142 726.142 143.5 722 143.5H8C3.85787 143.5 0.5 140.142 0.5 136V8Z' fill='none' stroke='%23ACB5BD'/%3E%3C/svg%3E");
+      border-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='730' height='144' viewBox='0 0 730 144'%3E%3Cpath d='M0.5 8C0.5 3.85787 3.85787 0.5 8 0.5H722C726.142 0.5 729.5 3.85787 729.5 8V136C729.5 140.142 726.142 143.5 722 143.5H8C3.85787 143.5 0.5 140.142 0.5 136V8Z' fill='none' stroke='%23ACB5BD'/%3E%3C/svg%3E") 15% round;
+    }
+
+.accordion__summary::-webkit-details-marker {
+    display: none;
+}
+
+    /* Псевдоэлемент для SVG в открытом аккордеоне */
+    .accordion__details:target::after {
+      content: "";
+      position: absolute;
+      right: 20px; /* Позиция элемента справа */
+      top: 50%; /* Позиция элемента по вертикали */
+      width: 18px;
+      height: 10px;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='10' viewBox='0 0 18 10' fill='none'%3E%3Cpath d='M17 9L9 1L1 9' stroke='%23495057' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    }
+
