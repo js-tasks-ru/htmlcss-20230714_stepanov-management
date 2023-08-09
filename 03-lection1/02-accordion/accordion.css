@@ -10,7 +10,7 @@
     display: inline-block;
     border: 1px solid #ccc;
     border-radius: 10px;
-    padding-bottom: 8px;
+    padding: 8px;
     width: 730px;
     max-height: 144px;
     transition: max-height 0.3s ease;
@@ -28,8 +28,8 @@
 .accordion__summary {
     display: inline-block;
     width: 158.86px;
-    margin-top: 24px;
-    margin-left: 32px;
+    margin-top: 16px;
+    margin-left: 24px;
     margin-bottom: 16px;
     color: var(--black, #212429);
     font-family: Inter;
@@ -55,7 +55,7 @@
   font-weight: 400;
   line-height: 24px;
   margin-top: 0px;
-  margin-left: 32px;
-  margin-right: 48.69px;
+  margin-left: 24px;
+  margin-right: 40.69px;
   margin-bottom: 24px;
  }
