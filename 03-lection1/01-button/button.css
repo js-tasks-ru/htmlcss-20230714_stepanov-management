@@ -1,9 +1,6 @@
 .button {
     display: inline-block;
-    width: 189px;
     height: 48px;
-    flex-shrink: 0;
-    margin: 5px;
     background-color: var(--white);
     color: var(--grey-4);
     text-align: center;
@@ -15,12 +12,12 @@
     border: none;
     border-radius: 8px;
     cursor: pointer;
+    transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
     }
   
   .button_primary {
     background: var(--blue-2);
-    color: var(--white);
-    transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
+    color: var(--white);    
   }
   
   .button_primary:hover {
@@ -29,8 +26,7 @@
   
   .button_secondary {
     background: var(--secondary);
-    color: var(--white);
-    transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
+    color: var(--white);    
   }
   
   .button_secondary:hover {
@@ -38,15 +34,14 @@
   }
   
   .button_alternate {
-    border: 1px solid var(--grey-6);
-    transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
+    border: 1px solid var(--grey-6);    
   }
   
   .button_alternate:hover {
     border: 1px solid var(--grey-7);
   }
   
-  .button_disabled {
+  .button:disabled {
     opacity: 0.5;
     pointer-events: none;
   }
